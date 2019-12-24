@@ -7,7 +7,7 @@ def mass2fuel(m):
 
 
 with open('data/1.txt') as f:
-    mass = [int(m) for m in f.readlines()]
+    mass = (int(m) for m in f.readlines())
 
 fuel = 0
 for m in mass:
