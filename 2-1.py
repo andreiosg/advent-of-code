@@ -5,9 +5,9 @@ def execute(intcode):
     pos = 0
     step = 4
 
-    while True:
+    while pos < len(intcode):
         opcode = intcode[pos+0]
-        if opcode != 1 and opcode != 2 or opcode == 99:
+        if opcode != 1 and opcode != 2:
             break
 
         op1 = intcode[intcode[pos+1]]
