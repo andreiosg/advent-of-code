@@ -1,6 +1,6 @@
 def count_matching(lo, hi):
     cnt = 0
-    for n in range(lo, hi):
+    for n in range(lo, hi+1):
         inc = 0
         while n // 10 > 0:
             ones = n % 10
