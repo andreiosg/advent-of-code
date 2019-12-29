@@ -1,7 +1,5 @@
-import math
-
 def mass2fuel(m):
-    return math.floor(m/3) - 2
+    return m//3 - 2
 
 
 with open('data/1.txt') as f:
