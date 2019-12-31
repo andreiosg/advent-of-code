@@ -15,7 +15,6 @@ def count_matching(lo, hi):
                 break
 
         for val in npairs.values():
-            #print(val)
             if val == 1 and inc == 1:
                 cnt += inc
                 break
