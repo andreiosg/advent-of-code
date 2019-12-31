@@ -24,7 +24,7 @@ def execute(intcode):
     return intcode[0]
 
 
-with open('data/2.txt') as f:
+with open('2.txt') as f:
     intcode = [int(val) for val in f.readline().split(',')]
 
 print(execute(intcode))

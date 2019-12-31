@@ -16,7 +16,7 @@ def count_matching(lo, hi):
     return cnt
 
 
-with open('data/4.txt') as f:
+with open('4.txt') as f:
     interval = tuple(int(n) for n in f.readline().split('-'))
 
 print(count_matching(*interval))

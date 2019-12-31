@@ -14,7 +14,7 @@ def traverse(orbits, orbitee):
 
 
 orbits = {}
-with open('data/6.txt') as f:
+with open('6.txt') as f:
     for line in f.readlines():
         orbit = line.strip().split(')')
         orbits[orbit[1]] = orbit[0]
