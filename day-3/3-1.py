@@ -9,7 +9,7 @@ def intersection(moves):
 
     min = 2 * MAX
     #can't be bigger than the init value since we're talking manhattan distances
-    #if MAX is a 'well' chose value xd
+    #if MAX is a 'well' chosen value xd
     markers = ('#', '0', 'X')
 
     panel = [['.' for i in range(MAX)] for i in range(MAX)]
