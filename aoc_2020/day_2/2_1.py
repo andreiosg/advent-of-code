@@ -1,9 +1,9 @@
 # O(n*m) 
 # n - number of lines, m - average string length
 
-valid = 0
-with open('in.txt') as f:
-    for line in f:
+def countValid(lines: list) -> int:
+    valid = 0
+    for line in lines:
         items = line.strip().split()
 
         lo, hi = map(int, items[0].split('-'))
@@ -15,8 +15,13 @@ with open('in.txt') as f:
             cnt += 1 if pwdC == c else 0
 
         valid += 1 if lo <= cnt <= hi else 0
+
+    return valid
+
+with open('in.txt') as f:
+    lines = f.readlines()
         
-print(valid)
+print(countValid(lines))
         
 
 
