@@ -11,8 +11,8 @@ with open('in.txt') as f:
         pwd = items[2]
 
         cnt = 0
-        for pwd_c in pwd:
-            cnt += 1 if pwd_c == c else 0
+        for pwdC in pwd:
+            cnt += 1 if pwdC == c else 0
 
         valid += 1 if lo <= cnt <= hi else 0
         
