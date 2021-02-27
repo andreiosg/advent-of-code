@@ -1,6 +1,6 @@
 # O(nlogn)
 
-def sum2020(expenses : list):
+def sum2020(expenses: list) -> int:
     sExpenses = list(expenses)
     sExpenses.sort()
 
@@ -12,7 +12,7 @@ def sum2020(expenses : list):
 
         l, r = (l+1, r) if sum < 2020 else (l, r-1)
 
-    return None
+    return 0
 
 with open('in.txt') as f:
     expenses = [int(expense) for expense in f.read().split()]
