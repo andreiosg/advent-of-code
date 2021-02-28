@@ -20,7 +20,7 @@ with open('in.txt') as f:
 passIDs = [passID(boardPass) for boardPass in passes]
 
 # account for the non present element with +1
-expected = (min(passIDs)+max(passIDs)) * (len(passIDs)+1) / 2 
+expectedFull = (min(passIDs)+max(passIDs)) * (len(passIDs)+1) / 2 
 computed = sum(passIDs)
 
-print(int(expected-computed))
+print(int(expectedFull-computed))
