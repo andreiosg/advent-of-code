@@ -11,7 +11,7 @@ def countValid(passports: list) -> int:
     return nValid
 
 with open('in.txt') as f:
-    # since entries are delimited by \n + the \n from the previous line
+    # since passports are delimited by \n + the \n from the previous line
     passports = f.read().split('\n\n')
 
 
