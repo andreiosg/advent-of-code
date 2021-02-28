@@ -7,6 +7,7 @@ def binaryPartition(lo: int, hi: int, scheme: str, lc: chr) -> int:
     return binaryPartition(lo, hi, scheme[1:], lc)
 
 def passID(boardPass: list) -> int:
+    # F, L are for row, column lower halves respectively
     row = binaryPartition(0, 127, boardPass[:7], 'F') 
     column = binaryPartition(0, 7, boardPass[7:], 'L')
 
@@ -17,6 +18,7 @@ with open('in.txt') as f:
     passes = f.read().split()
 
 passIDs = [passID(boardPass) for boardPass in passes]
+
 # account for the non present element with +1
 expected = (min(passIDs)+max(passIDs)) * (len(passIDs)+1) / 2 
 computed = sum(passIDs)

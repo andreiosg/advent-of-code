@@ -7,6 +7,7 @@ def binaryPartition(lo: int, hi: int, scheme: str, lc: chr) -> int:
     return binaryPartition(lo, hi, scheme[1:], lc)
 
 def passID(boardPass: list) -> int:
+    # F, L are for row, column lower halves respectively
     row = binaryPartition(0, 127, boardPass[:7], 'F') 
     column = binaryPartition(0, 7, boardPass[7:], 'L')
 
