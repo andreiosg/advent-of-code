@@ -1,6 +1,6 @@
 import re
 
-def cumulativeBags(bags: dict, key: str) -> bool:
+def cumulativeBags(bags: dict, key: str) -> int:
     # innermost bag
     if not len(bags[key]): return 1
     
