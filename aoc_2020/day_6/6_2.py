@@ -10,8 +10,4 @@ def countAnswered(group: list) -> int:
 with open('in.txt') as f:
     groups = f.read().split('\n\n')
 
-sum = 0
-for group in groups:
-    sum += countAnswered(group)
-
-print(sum)
+print(sum([countAnswered(group) for group in groups]))
