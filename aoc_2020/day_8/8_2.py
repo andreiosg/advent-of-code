@@ -1,4 +1,4 @@
-def fixCorrupt(program: list) -> None:
+def fixCorrupt(program: list) -> int:
     corrupt = {'nop': 'jmp', 'jmp': 'nop'}
 
     for i, instruction in enumerate(program):
