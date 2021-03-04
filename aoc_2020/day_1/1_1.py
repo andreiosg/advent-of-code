@@ -15,6 +15,6 @@ def sum2020(expenses: list) -> int:
     return 0
 
 with open('in.txt') as f:
-    expenses = [int(expense) for expense in f.read().split()]
+    expenses = list(map(int, f.read().split()))
 
 print(sum2020(expenses))
