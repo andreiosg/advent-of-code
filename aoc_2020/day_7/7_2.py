@@ -2,7 +2,7 @@ import re
 
 def cumulativeBags(bags: dict, key: str) -> int:
     # innermost bag
-    if not len(bags[key]): return 1
+    if not bags[key]: return 1
     
     # itself + all the others it contains, recursively
     n = 1

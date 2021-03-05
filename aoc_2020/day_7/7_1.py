@@ -4,7 +4,7 @@ def hasShinyGold(bags: dict, key: str) -> bool:
     # shiny gold was found
     if 'shiny gold' in bags[key]: return True
     # innermost bag
-    if not len(bags[key]): return False
+    if not bags[key]: return False
     
     innersContain = False
     for bag in bags[key]:
