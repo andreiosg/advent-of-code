@@ -18,7 +18,7 @@ joltages.extend(init.values())
 joltages.sort()
 
 maxStep = 3
-# join every valid branch joltage (step=1,2,3) to each joltage
+# join every valid joltage with its branch joltages (step=1,2,3) 
 joltageBranches = {joltage: [joltages[i+j] for j in range(1, maxStep+1)
                    if i+j < len(joltages) and joltages[i+j]-joltage <= maxStep]
                    for i, joltage in enumerate(joltages)}
