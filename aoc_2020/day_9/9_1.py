@@ -12,4 +12,5 @@ def findInvalid(cypher: str, n: int) -> int:
 with open('in.txt') as f:
     cypher = list(map(int, f.read().split()))
 
-print(findInvalid(cypher, 25))
+nPreamble = 25
+print(findInvalid(cypher, nPreamble))
