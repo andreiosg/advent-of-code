@@ -10,6 +10,6 @@ with open('in.txt') as f:
 init = {'charging_outlet': 0, 'built_in_adapter': max(joltages) + 3}
 joltages.extend(init.values())
 
-steps =generateSteps(joltages)
+steps = generateSteps(joltages)
 
 print(steps.count(1)*steps.count(3))
