@@ -1,8 +1,7 @@
 # O(nlogn)
 
 def sum2020(expenses: list) -> int:
-    sExpenses = list(expenses)
-    sExpenses.sort()
+    sExpenses = sorted(expenses)
 
     l, r = 0, len(sExpenses)-1
     while l < r:

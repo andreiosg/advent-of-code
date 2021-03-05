@@ -1,6 +1,5 @@
 def generateSteps(joltages: list) -> dict:
-    sJoltages = list(joltages)
-    sJoltages.sort()
+    sJoltages = sorted(joltages)
 
     return [sJoltages[i+1]-sJoltages[i] for i in range(len(sJoltages)-1)]
 
