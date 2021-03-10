@@ -16,7 +16,6 @@ def evolveGrid(grid: list) -> bool:
         for j, seat in enumerate(line):
             adjOccupied = 0
             for mov in movs:
-
                 x, y = j, i
                 while not (x+mov[0] < 0 or x+mov[0] >= length 
                       or y+mov[1] < 0 or y+mov[1] >= height):
