@@ -21,7 +21,7 @@ def navigate(instructions: list) -> int:
         elif action in ['L', 'R']:
             turn = 90
             sign = -1 if action == 'R' else 1
-            ship['dir'] = muls[(muls.index(ship['dir'])+sign*int(val/turn))%len(muls)]
+            ship['dir'] = muls[(muls.index(ship['dir'])+sign*val//turn)%len(muls)]
         elif action == 'F':
             ship['x'] += ship['dir'][0] * val
             ship['y'] += ship['dir'][1] * val
